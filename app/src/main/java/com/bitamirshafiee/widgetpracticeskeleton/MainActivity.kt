@@ -2,7 +2,9 @@ package com.bitamirshafiee.widgetpracticeskeleton
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.SeekBar
+import android.widget.Spinner
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -31,5 +33,14 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+
+        val spinner = findViewById<Spinner>(R.id.spinner)
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.list_of_units,
+            android.R.layout.simple_list_item_1 ).also {
+                adapter -> spinner.adapter = adapter
+        }
+        
     }
 }
