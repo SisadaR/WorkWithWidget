@@ -14,4 +14,24 @@
         android:importantForAutofill="no"
         android:inputType="text" />
 
+    <LinearLayout
+        android:layout_margin="@dimen/margin_eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/age_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/str_age_tools"/>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+    </LinearLayout>
+
 </LinearLayout>
