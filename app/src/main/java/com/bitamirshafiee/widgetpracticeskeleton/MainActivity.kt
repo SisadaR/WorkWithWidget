@@ -41,6 +41,6 @@ class MainActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1 ).also {
                 adapter -> spinner.adapter = adapter
         }
-        
+
     }
 }
